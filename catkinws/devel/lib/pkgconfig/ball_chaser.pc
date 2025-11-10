@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/project2/catkinws/devel
+
+Name: ball_chaser
+Description: Description of ball_chaser
+Version: 0.0.0
+Cflags: -I/home/ubuntu/project2/catkinws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs geometry_msgs
