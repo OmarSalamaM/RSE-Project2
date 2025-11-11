@@ -683,7 +683,6 @@ src/drive_bot.o: src/drive_bot.cpp.o
 
 # target to build an object file
 src/drive_bot.cpp.o:
-	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/drive_bot.cpp.o
 	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.o
 .PHONY : src/drive_bot.cpp.o
 
@@ -693,7 +692,6 @@ src/drive_bot.i: src/drive_bot.cpp.i
 
 # target to preprocess a source file
 src/drive_bot.cpp.i:
-	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/drive_bot.cpp.i
 	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.i
 .PHONY : src/drive_bot.cpp.i
 
@@ -703,9 +701,35 @@ src/drive_bot.s: src/drive_bot.cpp.s
 
 # target to generate assembly for a file
 src/drive_bot.cpp.s:
-	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/drive_bot.cpp.s
 	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.s
 .PHONY : src/drive_bot.cpp.s
+
+src/process_image.o: src/process_image.cpp.o
+
+.PHONY : src/process_image.o
+
+# target to build an object file
+src/process_image.cpp.o:
+	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.o
+.PHONY : src/process_image.cpp.o
+
+src/process_image.i: src/process_image.cpp.i
+
+.PHONY : src/process_image.i
+
+# target to preprocess a source file
+src/process_image.cpp.i:
+	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.i
+.PHONY : src/process_image.cpp.i
+
+src/process_image.s: src/process_image.cpp.s
+
+.PHONY : src/process_image.s
+
+# target to generate assembly for a file
+src/process_image.cpp.s:
+	cd /home/ubuntu/project2/catkinws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.s
+.PHONY : src/process_image.cpp.s
 
 # Help Target
 help:
@@ -757,6 +781,9 @@ help:
 	@echo "... src/drive_bot.o"
 	@echo "... src/drive_bot.i"
 	@echo "... src/drive_bot.s"
+	@echo "... src/process_image.o"
+	@echo "... src/process_image.i"
+	@echo "... src/process_image.s"
 .PHONY : help
 
 
